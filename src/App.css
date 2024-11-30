@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.container {
+  width: 400px;
+  height: min-content;
+  background-color: white;
+  border-radius: 12px;
+  padding: 29px;
+}
+
+.search-box {
+  width: 100%;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-box input {
+  width: 259px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: black;
+  background-color: #e6f5fb;
+  padding: 12px 15px;
+  border-radius: 15px;
+}
+
+.search-box input::placeholder {
+  color: black;
+}
+
+.search-box button {
+  width: 69px;
+  height: 47px;
+  background-color: #e6f5fb;
+  border-radius: 23%;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.humidity img {
+  width: 33px;
+}
+
+.search-box button:hover {
+  background-color: #ababab;
+}
+
+.wind img {
+  width: 33px;
+}
+
+.weather-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+}
+
+.weather-img {
+  width: 60%;
+}
+
+.weather-box {
+  margin-block: 20px;
+  text-align: center;
+}
+
+.weather-box .temperature {
+  font-size: 40px;
+  font-weight: 800;
+  position: relative;
+}
+
+.weather-box .temperature sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 600;
+}
+
+.weather-box .description {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.weather-details {
+  width: 108%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
+}
+
+.humidity {
+  margin-left: 20px;
+}
+
+.wind {
+  margin-right: 20px;
+}
+
+.weather-details i {
+  font-size: 36px;
+}
+
+.weather-details .text {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.text span {
+  font-size: 20px;
+  font-weight: 700;
+}
+@media (max-width:750px) {
+  body{
+    width: 101%;
+    height: 102vh;
+  }
+}
